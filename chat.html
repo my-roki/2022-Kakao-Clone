@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/8f89665c52.js"
       crossorigin="anonymous"
     ></script>
-    <title>Friends in Kakao Clone</title>
+    <title>Chat in Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -28,59 +28,32 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chat</h1>
       <div class="screen-header__icon">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fa-solid fa-comments fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
       </div>
     </header>
 
-    <a href="" id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>
-      Friends' Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            class="user-component__profileimage user-component__profileimage--xl"
+            class="user-component__profileimage"
             src="https://avatars.githubusercontent.com/u/67298829?s=96&v=4"
             alt=""
             srcset=""
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Anthony</h4>
-            <!-- <h6 class="user-component__subtitle">supercool coding!</h6> -->
+            <h6 class="user-component__subtitle">supercool coding!</h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__profileimage user-component__profileimage--sm"
-              src="https://img1.daumcdn.net/thumb/R1280x0/?fname=https://tistory1.daumcdn.net/tistory/3674348/attach/73c891243e7e474e8d81c200967bb14d"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">22:24</span>
+          <span class="red-bedge">1</span>
         </div>
       </div>
     </main>
@@ -89,13 +62,13 @@
       <ul class="navigation__ul">
         <li class="navigation__li">
           <a class="navigation__link" href="friends.html">
-            <i class="fas fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="navigation__li">
           <a class="navigation__link" href="chat.html">
             <span class="navigation__notification red-bedge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
+            <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="navigation__li">

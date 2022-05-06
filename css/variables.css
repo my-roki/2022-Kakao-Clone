@@ -1,3 +1,10 @@
 :root {
+  --horizontal-space: 25px;
+
   --yellow: #f8dd0f;
+  --font-color: #2e363e;
+
+  --img-large-size: 60px;
+  --img-normal-size: 45px;
+  --img-small-size: 40px;
 }
