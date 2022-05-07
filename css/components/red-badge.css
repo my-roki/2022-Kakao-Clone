@@ -1,4 +1,4 @@
-.red-bedge {
+.number-bedge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,4 +8,15 @@
   width: 20px;
   height: 20px;
   border-radius: 15px;
+}
+
+.dot-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  font-weight: 400;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 20px 20px var(--horizontal-space);
+  padding: 10px 20px 20px var(--horizontal-space);
 }
 
 .screen-header__title {
@@ -10,6 +10,16 @@
   font-weight: 700;
 }
 
-.screen-header__icon span {
+.screen-header__icon {
+  position: relative;
+}
+
+.screen-header__icon span i {
   padding: 0 6px;
+}
+
+.screen-header__dot {
+  position: absolute;
+  bottom: 16px;
+  left: 60px;
 }

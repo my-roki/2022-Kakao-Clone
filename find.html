@@ -31,53 +31,65 @@
       <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icon">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
+        <span class="screen-header__dot dot-badge"></span>
       </div>
     </header>
 
-    <a href="" id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>
-      Friends' Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__profileimage user-component__profileimage--xl"
-            src="https://avatars.githubusercontent.com/u/67298829?s=96&v=4"
-            alt=""
-            srcset=""
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Anthony</h4>
-            <!-- <h6 class="user-component__subtitle">supercool coding!</h6> -->
-          </div>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span> QR code </span>
         </div>
-        <div class="user-component__column"></div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>
+            Add by
+            <br />
+            Contract
+          </span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
+
+      <div class="recommanded-friends">
+        <h6 class="recommanded-friends__title">Recommanded Friends</h6>
+        <span>You have no recommanded friends</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Open Chat Home <i class="fa-solid fa-angle-right fa-xs"></i>
+          </span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__profileimage user-component__profileimage--sm"
-              src="https://img1.daumcdn.net/thumb/R1280x0/?fname=https://tistory1.daumcdn.net/tistory/3674348/attach/73c891243e7e474e8d81c200967bb14d"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Super Cool Nomad Coders</h5>
+            <h6 class="open-post__hashtag">#nico#html#css</h6>
+            <div class="open-post__postinfo">
+              <img src="https://nomadcoders.co/m.svg" alt="" srcset="" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__status">Active</span>
             </div>
           </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fa-solid fa-angle-right"></i>
+          <div class="open-post__column">
+            <div class="open-post__backgroundimg">
+              <img src="https://nomadcoders.co/m.svg" alt="" srcset="" />
+              <div class="open-post__like">
+                <i class="fa-solid fa-heart"></i> <span>326</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +104,7 @@
         </li>
         <li class="navigation__li">
           <a class="navigation__link" href="chat.html">
-            <span class="navigation__notification red-bedge">1</span>
+            <span class="navigation__notification number-bedge">1</span>
             <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>
@@ -103,7 +115,7 @@
         </li>
         <li class="navigation__li">
           <a class="navigation__link" href="more.html">
-            <span class="navigation__dot"></span>
+            <span class="navigation__dot dot-badge"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>

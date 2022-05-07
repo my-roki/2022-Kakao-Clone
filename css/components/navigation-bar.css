@@ -24,15 +24,7 @@
 }
 
 .navigation__dot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   bottom: 28px;
   left: 25px;
-  background-color: tomato;
-  font-weight: 400;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
 }
