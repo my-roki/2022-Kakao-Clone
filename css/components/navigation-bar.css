@@ -17,14 +17,53 @@
   position: relative;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-7px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .navigation__notification {
   position: absolute;
   bottom: 20px;
   left: 20px;
+
+  animation: notificationAnimation 3s ease-in-out infinite;
 }
 
 .navigation__dot {
   position: absolute;
   bottom: 28px;
   left: 25px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.navigation__li {
+  animation: appearBtnAnimation 0.5s ease-in-out backwards;
+}
+
+.navigation__li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.navigation__li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.navigation__li:last-child {
+  animation-delay: 0.9s;
 }

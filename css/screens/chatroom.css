@@ -1,0 +1,144 @@
+#chat-screen,
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+}
+
+#chat-screen .alt-header {
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  z-index: -1;
+
+  animation: fadeIn 0.5s linear;
+}
+
+.chat__timestamp {
+  padding: 10px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: white;
+  background-color: #92a4b2;
+  border-radius: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+}
+
+.message-row img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.message-row__info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.message-row__author {
+  margin-bottom: 10px;
+  opacity: 0.8;
+  display: block;
+}
+
+.message-row__payload {
+  max-width: 66%;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+
+.message-row__time {
+  display: block;
+  opacity: 0.8;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message-row__info {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message-row__payload {
+  background-color: var(--yellow);
+  margin-right: 0;
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+.text-message-form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+.text-message-form .text-message-form__column:first-child {
+  width: 10%;
+}
+
+.text-message-form .text-message-form__column:last-child {
+  position: relative;
+  width: 90%;
+}
+
+.text-message-form__column input {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  border: var(--border-lines);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+.text-message-form__column:last-child > button {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: var(--yellow);
+  border-radius: 45%;
+}
+
+.text-message-form__column:last-child > i {
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  color: var(--grey);
+}

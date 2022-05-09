@@ -7,11 +7,16 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/red-badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatroom.css";
 
 body {
   color: var(--font-color);
@@ -38,4 +43,49 @@ body::-webkit-scrollbar-track {
 
 .main-screen {
   padding: 10px var(--horizontal-space);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  font-size: 128px;
+  z-index: 1;
+
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2.2s;
+}
+
+#no-mobile {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  font-size: 32px;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+@media screen and (max-width: 600px) {
+  #no-mobile {
+    display: none;
+  }
 }

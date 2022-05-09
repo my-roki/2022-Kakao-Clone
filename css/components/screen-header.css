@@ -23,3 +23,16 @@
   bottom: 16px;
   left: 60px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icon .fa-gear:hover {
+  animation: rotateCog 1s linear infinite;
+}

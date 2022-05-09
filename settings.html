@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/8f89665c52.js"
       crossorigin="anonymous"
     ></script>
-    <title>Chat in Kakao Clone</title>
+    <title>Setting in Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -27,50 +27,57 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chat</h1>
-      <div class="screen-header__icon">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fa-solid fa-comments fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fa-solid fa-gear fa-lg"></i></span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <span class="alt-header__title">Settings</span>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
       </div>
     </header>
 
     <main class="main-screen">
-      <a href="chatroom.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__profileimage"
-              src="https://avatars.githubusercontent.com/u/67298829?s=96&v=4"
-              alt=""
-              srcset=""
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title">Anthony</h4>
-              <h6 class="user-component__subtitle">supercool coding!</h6>
-            </div>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notice</span>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__time">22:24</span>
-            <span class="number-bedge">1</span>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>Lab</span>
           </div>
-        </div>
-      </a>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-exclamation hack-reversed"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Lastest Version</div>
+        </li>
+      </ul>
     </main>
 
     <nav class="navigation">
       <ul class="navigation__ul">
         <li class="navigation__li">
           <a class="navigation__link" href="friends.html">
-            <i class="fa-regular fa-user fa-2x"></i>
+            <i class="fa-solid fa-chevron-left fa-2x"></i>
           </a>
         </li>
         <li class="navigation__li">
           <a class="navigation__link" href="chat.html">
             <span class="navigation__notification number-bedge">1</span>
-            <i class="fas fa-comment fa-2x"></i>
+            <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="navigation__li">
@@ -86,6 +93,7 @@
         </li>
       </ul>
     </nav>
+
     <div id="no-mobile">
       <span>Your screen is too big ...</span>
     </div>

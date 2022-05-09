@@ -45,6 +45,7 @@
 .user-component__column:last-child {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
   color: var(--grey);
 }
