@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="playlist">
+      <header class="header">
+        <i class="fas fa-arrow-left fa-lg"></i>
+        <i class="fas fa-search fa-lg"></i>
+      </header>
+      <main class="main">
+        <div class="artist">
+          <div class="artist__image">
+            <img
+              src="https://lh3.googleusercontent.com/DBd_7WscYc3JjhichzUvwXAah0_eTxXYty_Zi5IXe9Q_OpnYXKYNKV4xO2FnGgUbs0ewhg6VO1rYpzp9=w226-h226-p-l90-rj"
+              alt="사랑해요 아이유! 이지은 아이유 짱!"
+            />
+          </div>
+          <div class="artist__info">
+            <span>아이유(IU)</span>
+            <span>Korean Pop, Dance, Acoustic, Ballad</span>
+          </div>
+          <div class="artist__buttons">
+            <div class="artist__buttons__shuffle dark-button">
+              <span>Shuffle</span>
+            </div>
+            <div id="like" class="artist__buttons__like light-button">
+              <i class="far fa-heart"></i>
+              <span>999 998</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="music">
+          <ul class="music-list">
+            <li
+              class="music-list__column now-playing"
+              name="music-list"
+              data-id="ZThVobEtp_o"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/-tdq58fAgaawQcx744mZUP67379plUJcWvzPSyfRy305ZmNcYii54WboN9OBa4I-cEdzu7u5yW4nSFlBQA=w544-h544-l90-rj"
+                  alt=""
+                />
+                <div id="playing-mark" class="playing-mark">
+                  <i class="fas fa-align-left fa-lg"></i>
+                </div>
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>Celebrity</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+
+            <li
+              class="music-list__column"
+              name="music-list"
+              data-id="04tYkKUPPv4"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/-tdq58fAgaawQcx744mZUP67379plUJcWvzPSyfRy305ZmNcYii54WboN9OBa4I-cEdzu7u5yW4nSFlBQA=w544-h544-l90-rj"
+                  alt=""
+                />
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>라일락</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+
+            <li
+              class="music-list__column"
+              name="music-list"
+              data-id="I0_ZXHzKysc"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/alWLsNVvCDvoRhwYELsityi5-_NdwKPQaSOqTD3Qjb4TY6YH0VyKhZWNGu91nEpgUEIVEeQFyFnimiws=w544-h544-l90-rj"
+                  alt=""
+                />
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>Blueming</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+
+            <li
+              class="music-list__column"
+              name="music-list"
+              data-id="Kevp2lFKSOg"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/SZ5mBUus0ipBuOGnrMFNh5sOHZm7EG1EJRrZxAq-RfszLbduUI-wOBmsqYhQh-RFCFBx_z170zy-2fUnYw=w544-h544-l90-rj"
+                  alt=""
+                />
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>Strawberry moon</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+
+            <li
+              class="music-list__column"
+              name="music-list"
+              data-id="NnRjwEhFU70"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/My1QVMpGzMwQmF6IprATeayjl5J_11wsN5xUvRTpNtBfQYjff1oTCw0Yf3pIFr5MPmEnWL-_wAUM89lTRA=w544-h544-l90-rj"
+                  alt=""
+                />
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>밤편지</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+
+            <li
+              class="music-list__column"
+              name="music-list"
+              data-id="2C1Jg04INb4"
+            >
+              <div class="music-list__album">
+                <img
+                  src="https://lh3.googleusercontent.com/COFBRD6GDIkwnlWYON62L4UwGdvKjw_xAsID5YeI66lpSrM6-Az-WzfTyRFgfGnu5OsL9IWRa8DMU8nr=w544-h544-l90-rj"
+                  alt=""
+                />
+              </div>
+              <div class="music-list__payload">
+                <span>아이유(IU)</span>
+                <span>Palette</span>
+              </div>
+              <div class="music-list__more">
+                <span><i class="fas fa-ellipsis-v"></i></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="current-play-popup">
+          <div class="current-play-popup__payload">
+            <span id="sub-play-title">아이유(IU)</span>
+            <span id="sub-play-artist">Celebrity</span>
+          </div>
+          <div class="current-play-popup__buttons">
+            <i class="fas fa-step-backward"></i>
+            <i id="sub-play-button" class="fas fa-pause fa-lg"></i>
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="current-play">
+      <header class="header">
+        <div class="header__column">
+          <span><i class="fas fa-arrow-left fa-lg"></i></span>
+        </div>
+        <div class="header__column">
+          <span><i class="fas fa-ellipsis-v fa-lg"></i></span>
+        </div>
+      </header>
+
+      <main id="now-play" calss="main">
+        <div id="playing" class="playing">
+          <img
+            src="https://lh3.googleusercontent.com/-tdq58fAgaawQcx744mZUP67379plUJcWvzPSyfRy305ZmNcYii54WboN9OBa4I-cEdzu7u5yW4nSFlBQA=w544-h544-l90-rj"
+            alt=""
+          />
+          <div class="playing__payload">
+            <span id="main-play-title">Celebrity</span>
+            <span id="main-play-artist">아이유(IU)</span>
+          </div>
+        </div>
+
+        <div class="playing-time">
+          <div class="playing-time__time">
+            <span>00:00</span>
+            <span>03:18</span>
+          </div>
+          <div class="playing-time__progress">
+            <input type="range" />
+          </div>
+        </div>
+
+        <div class="playing-buttons">
+          <i class="fas fa-sync fa-lg"></i>
+          <i class="fas fa-step-backward fa-lg"></i>
+          <i id="main-play-button" class="fas fa-pause-circle fa-3x"></i>
+          <i class="fas fa-step-forward fa-lg"></i>
+          <i class="fas fa-random fa-lg"></i>
+        </div>
+      </main>
+    </div>
+    <script src="music.js"></script>
+    <div id="player"></div>
+  </body>
+</html>

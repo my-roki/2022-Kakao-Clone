@@ -1,8 +1,8 @@
 # 2022 Kakao Clone
 
-<img src="./thumbnail1.png">
-<img src="./thumbnail2.png">
-<img src="./thumbnail3.png">
+<img src="./thumbnail1.png" height="400px">
+<img src="./thumbnail2.png" height="400px">
+<img src="./thumbnail3.png" height="400px">
 
 <a href="https://my-roki.github.io/kakao_clone/" target="_blank">github.io page</a>
 
